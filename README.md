@@ -1,2 +1,3 @@
-# mwos-frauddetection-2015
-https://wiki.mozilla.org/Security/Automation/Winter_Of_Security_2015/MIG:_Cross-platform_log_monitoring_for_threat_detection
+# Anomaly Detection in SSH Logs
+
+This repo will have all the trial and errors of the approaches taken for finding a suitable statistical method to detect anomaly ins SSH logs
