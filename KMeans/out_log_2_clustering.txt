@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:       weka.clusterers.SimpleKMeans -init 0 -max-candidates 100 -periodic-pruning 10000 -min-density 2.0 -t1 -1.25 -t2 -1.0 -N 5 -A "weka.core.EuclideanDistance -R first-last" -I 1000 -num-slots 1 -S 10
+Relation:     log_used_2
+Instances:    645680
+Attributes:   4
+              START_TIME
+              END_TIME
+              USER
+              TIME_DIFFERENCE
+Test mode:    evaluate on training data
+
+
+=== Clustering model (full training set) ===
+
+
+kMeans
+======
+
+Number of iterations: 26
+Within cluster sum of squared errors: 1335640.0409077231
+
+Initial starting points (random):
+
+Cluster 0: '8/6/2015 16:06:38','8/6/2015 16:06:39',None,1
+Cluster 1: '7/28/2015 16:42:50','7/28/2015 16:42:50',None,0
+Cluster 2: '8/16/2015 00:56:16','8/16/2015 00:56:18',None,2
+Cluster 3: '7/31/2015 01:56:10','7/31/2015 01:56:11',None,1
+Cluster 4: '9/27/2015 19:46:50','9/27/2015 19:46:52',None,2
+
+Missing values globally replaced with mean/mode
+
+Final cluster centroids:
+                                                   Cluster#
+Attribute                      Full Data                  0                  1                  2                  3                  4
+                              (645680.0)           (2481.0)             (17.0)         (160659.0)         (481549.0)            (974.0)
+=======================================================================================================================================
+START_TIME            8/18/2015 22:47:33  9/9/2015 07:33:00 8/18/2015 22:47:32 9/29/2015 16:00:02 8/18/2015 22:47:33 9/28/2015 00:13:35
+END_TIME              7/11/2015 18:08:57  9/9/2015 07:33:02 8/18/2015 22:47:32 7/11/2015 18:08:57 8/18/2015 22:47:31 8/31/2015 01:09:29
+USER                                None             dolske               None              hwine               None          nmatsakis
+TIME_DIFFERENCE                 278.2657         25072.9996        -16258.2941           199.3259            12.8712         81641.9415
+
+
+
+
+Time taken to build model (full training data) : 8.54 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+0        2481 (  0%)
+1          17 (  0%)
+2      160659 ( 25%)
+3      481549 ( 75%)
+4         974 (  0%)
+
+
