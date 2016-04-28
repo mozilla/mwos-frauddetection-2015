@@ -1,0 +1,432 @@
+% This is annote.bib
+% Author: Ayman Ammoura
+% A demo for CMPUT 603 Fall 2002.
+% The order of the following entries is irrelevant. They will be sorted according to the
+% bibliography style used.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The following is a conference paper
+@InProceedings{Meng2011,
+  author    = {Yu-Xin Meng},
+  title     = {The practice on using machine learning for network anomaly intrusion detection},
+  booktitle = {2011 International Conference on Machine Learning and Cybernetics},
+  year      = {2011},
+  month     = {July},
+  volume = {2},
+  pages = {576-581}
+}
+
+%% AD --> rabimba:: Ekhane ki koroniyo?
+
+% The following is a conference paper
+@InProceedings{Frei2008,
+  author    = {Adrian Frei and Marc Rennhard},
+  title     = {Histogram Matrix: Log file visualization for anomaly detection},
+  booktitle = {ARES 2008 - 3rd International Conference on Availability, Security, and Reliability, Proceedings},
+  year      = {2008},
+  pages = {610-617},
+ % annote    = {Frei et. al. in this paper presented an \textbf{approach for detecting and visualizing anomalies in a log file}. They use \textbf{word count to create a single predictor attribute} which they use to create a histogram for each log line every hour. They applied a \textbf{bespoke statistical measure as their anomaly detection method} based on the standard deviation of each individual bin\rq{s} values compared to the same bins over the current day or same slot on a previous week or month as a comparison. Their experiment supports visualizing the results as clickable matrix which can be used to drill down to examine the log lines at the matching time. They made use of the idea that many systems and services have a sequential pattern to their activity which gets logged. This mix of log messages will remain the same regardless of the volume of transactions that occur and thus by normalizing the volume of the histogram they can compare the mix over a time period to detect anomalies. Areas for improvement to this approach were identified by Frei \& Rennhard in future work. The \textbf{areas of improvement} of the paper were the following 
+%\begin{itemize}
+%\item Use of only word count was identified as a limitation. Log files whose word count does not vary by very much might not be perfect fit for this method. 
+%\item They also raised a desire to include clustering into the solution as well. 
+%\item Another area of improvement they identified was they would like a way to define rules to remove “noisy” messages.
+%\end{itemize}}
+}
+
+%%
+
+%% A Journal paper about the anomaly detection.
+@ARTICLE{Oliner2012,
+		author = {Adam Oliner and Archana Ganapathi and Wei Xu},
+		title = {Advances and Challenges in Log Analysis},
+		journal = {Communications of the ACM},
+		pages = {},
+		volume = {55},
+		number = {2},
+		year = {2012},
+%		annote = "In this journal the authors talk about \textbf{some of the most common application of log analysis, problems in using statistical methods in log analysis and some methods people use to analyze logs}. They argue that the effectiveness of log analysis will depend upon the type of attacks we are trying to detect with the type of logs we have. Citing the example of ssh logs and the data we have within them, they have explained that this kind of logs give us limited data in terms of login, logout time, failed login attempts, IP association with the user. From this information it is possible to analyze a users behavior but not reliable considering events like vacation. They also argue that though we can use statistical anomaly detection to mine from anomalies, they do not provide any actionable insight. They have observed that to make detection and prediction easier a lot of recent work aims to modify the instrumentation so that logs have more helpful data for specific kind of analysis.
+        %AD --> erpor ar kichhu nei?"
+        
+}
+
+@ARTICLE{Bezerra2013,
+		author = {Fábio Bezerra and Jacques Wainer},
+		title = {Algorithms for anomaly detection of traces in logs of process aware information systems},
+		volume = {38},
+        issue = {1},
+		year = {2013},
+		pages = {33-44},
+		journal = {Information Systems},
+%		annote = "Bezerra et. al. in this paper proposes 4 algorithms for detecting anomalies in logs of process aware systems. The authors evaluate the algorithms on a set of 1500 artiicial logs, which had specific information based on the process flow of the applications. 
+%These logs contain information about specific sequence of activities. 
+Among the 4 discussed algorithms the the first one, {\textbf{naive detection approach}} only marks potential anomalies in the system which also works as a baseline since it results in zero false negatives but large number of false positives. 
+They have defined `anomalies' with the help of some intuitions. They are 
+\begin{enumerate}
+\item Each of the anomalous execution is `infrequent' among the set of all executions, although the whole set of anomalous executions may not be that infrequent 
+\item The process models that `explain' the executions in the normal set `make sense' 
+\item The process models that could `explain' both the normal executions and some of the anomalous ones `makes less sense'. The terms 'explain' and 'make sense' is used for mining process models. 'explain' is when the model was mined from execution logs and 'make sense' relies on the occurrence of the events in the log with the degree of accuracy in which the process model describes the observed behavior. 
+\end{enumerate}
+They use these for conformance checking using the tool ProM framework. Conformance checks are used in all of the other three algorithms. In the first algorithm \textbf{'Threshold algorithm'}, the threshold receives three parameters, the mine function, a noisy process discovering algorithm, the conformance function, that compute the conformance of a trace to a model, and the threshold value x. The \textbf{iterative algorithm} instead of selecting all traces with conformance below the threshold, it will select only the trace with lowest conformance as an anomaly, and repeat the process, until the minimum conformance trace is above a threshold.The sampling algorithm is based on the idea that a
+sample of the log should not contain an anomaly, since they are infrequent instances of the model. Hence all infrequent that are not instances of the mined model are considered an anomaly.
+They tested out the algorithms on 1500 artificial logs they created with traces. 
+The use of synthetic data is justified by the fact that there are problems in labeling a trace as anomalous in real logs. Through their tests they determine for threshold algorithm the mine function is 'alpha',conformance functions is 'fitnes' and x (threshold factor) is 0.9. For iterative mine functions is 'alpha', conformance function is 'appropriateness' and x is 0.9.The sampling algorithm only takes two parameters hence the mine functions is 'heuristic miner' and sampling factor is 70\%. The limiting factor to this work is this only uses the control-flow perspective and only for those logs who follow a different path. Logs that follows this path but has other anomalies like breach of roles for users with different roles, this method will not work. "
+}
+
+%%
+
+@article{sperotto2012autonomic,
+  title={Autonomic parameter tuning of anomaly-based IDSs: an SSH case study},
+  author={Sperotto, Anna and Mandjes, Michel and Sadre, Ramin and De Boer, Pieter-Tjerk and Pras, Aiko},
+  journal={Network and Service Management, IEEE Transactions on},
+  volume={9},
+  number={2},
+  pages={128--141},
+  year={2012},
+  publisher={IEEE}
+}
+
+
+%%
+@ARTICLE{Kind2009,
+		author = {Andreas Kind and Marc Ph Stoecklin and Xenofontas Dimitropoulos},
+		title = {Histogram-Based Traffic Anomaly Detection},
+		volume = {6},
+        issue = {2},
+		year = {2009},
+		pages = {110-121},
+		journal = {IEEE Transactions on Network Service Management},
+%		annote = "This research suggest a new approach to feature-based anomaly detection. From the network flow, it defines features. And from the features, it provide the way to compare this features. Then it cluster data and construction histgram models. From this, they find anomalies."
+}
+
+%%
+@ARTICLE{Sommer2010,
+		author = {Robin Sommer and Vern Paxson},
+		title = {Outside the Closed World: On Using Machine Learning for Network Intrusion Detection},
+		issue = {May},
+        year = {2010},
+		pages = {305-316},
+		journal = {2010 IEEE Symposium on Security and Privacy}
+}
+
+%%
+%%
+@ARTICLE{Xu2009,
+		author = {Wei Xu and Ling Huang and Armando Fox and David Patterson and Michael I Jordan},
+		title = {Detecting large-scale system problems by mining console logs},
+		volume = {10},
+        issue = {7},
+        year = {2009},
+		pages = {117},
+		journal = {Proceedings of the ACM SIGOPS 22nd symposium on Operating systems principles},
+		%annote = "Wei Xu et. al. proposes a method in their paper which \textbf{first creates composite features by analyzing console logs and then use these features in machine learning to detect operational anomalies in the log}. Their method can be summarized as a four step process. In the \textbf{first step}, they parse the log file and static code analysis is employed to generate an \textbf{abstract syntax tree (AST) of the logger class} of the logger. AST gives all method calls on objects of the classes with filename and number of call. By enumerating toString call in classes they are able to deduce the type of variables which are used in logging. Once this is produced all possible log message template strings are collected from the source code and match these templates to each log message to recover its structure, effectively building a schema for the console logs. In \textbf{second step}, state ratio and message count vectors are created as \textbf{feature vectors}. The state ratio vector is created exploiting a time window between which group of state variables is represented. The actual number does not matter but the ratio between state variable changes matter. Each dimension of the vector corresponds to a distinct state variable value, and the value of the dimension is how many times this state value appears in the time window. The message count vector are based on identifiers. For a specific identifier all the actions related to that identifier is grouped to create a message count vector. Each vector dimension corresponds to a different message type, and the value of the dimension tells how many messages of that type appear in the message group similar to bag of words if we consider the message groups as `document'.In the \textbf{third step}, \textbf{Principal Component Analysis} is used for anomaly detection. PCA initially is employed to separate out repeating patterns in feature vectors, thereby making abnormal message patterns easier to detect. Once the `normal' behaviors are pruned anomalies are computed by computing the farthest away events form the sub-space. To further improve the processing, Term Frequency-Inverse Document Frequency (TF-IDF) is used in the feature matrix. Intuitively, multiplying the original count with the IDF reduces the weight of common message types that appear in most groups, which are less likely to indicate problems. This is not applied to state-ratio vectors. These methods are used in \textbf{logs collected from HDFS file system and Darkstar game server console logs}. They were able to detect performance problems in the system with highload using the state vectors.They also could mark the recovery period as anomaly using the message count vector. Similarly for HDFS they were able to detect anomalies due to transient workload imbalance. In the \textbf{last step}, \textbf{a decision tree} was created to give more insight to the PCA. The PCA results were used as class labels and RapidMiner was used to generate the decision tree."
+}
+
+%%
+@ARTICLE{Zaki2001,
+		author = {Mohammed J Zaki},
+		title = {SPADE: An efficient algorithm for mining frequent sequences},
+		volume = {42},
+        issue = {1-2},
+        year = {2001},
+		pages = {31-60},
+		journal = {Machine Learning},
+%		annote = "Zaki et. al. in this paper propose a \textbf{vertical format sequential pattern mining method}. \textbf{SPADE} first maps the
+sequence database to a vertical id-list database format which is a large set of items
+\textbf{\textless SID (Sequence ID), EID (Event ID)\textgreater}. \textbf{Sequential pattern mining} is performed by
+growing the subsequences (patterns) one item at a time by \textbf{Apriori candidate
+generation}.
+The authors use a lattice-theoretic approach to decompose the original search space (lattice) into smaller pieces (sub-lattices) which can be processed independently in main-memory.
+Their approach usually requires \textbf{three database scans, or only a single scan with some
+pre-processed information, thus minimizing the I/O costs}. The main \textbf{contributions} of the paper 
+are:
+\begin{itemize}
+\item SPADE decouples the
+problem of decomposition from the pattern search. \textbf{Pattern search} could be done in a BFS
+(breadth first search) or a DFS (depth first search) manner. 
+\item The vertical id-list based
+approach is also insensitive to data-skew. It also has linear scalability with respect to
+the number of input-sequences, and a number of other database parameters.
+\end{itemize}"
+}
+
+%%
+@ARTICLE{Taerat2011,
+		author = {Narate Taerat and Jim Brandt and Ann Gentile and Matthew Wong and Chokchai Leangsuksun},
+		title = {Baler: Deterministic, lossless log message clustering tool},
+		volume = {42},
+        issue = {3},
+        year = {2011},
+		pages = {285-295},
+		journal = {Computer Science - Research and Development},
+%		annote = " Taerat et. al. in this work propose a method which  \textbf{tackles the 
+issues of clustering of extremely large log files and compare the performance of their
+solution against other common methods}. Many clustering tools use a multi-pass approach for processing data into clusters. 
+By \textbf{utilizing a single pass approach to generating the token attributes and clustering}, Baler
+removes memory usage issues that frequently occurs in clustering solutions of
+this type when dealing with very large log files. As part of the initial clustering
+algorithm, the log file is splitted line by line basis into various token types like “Alpha-Numeric”,
+“Numbers”, “Spaces” etc. For the “Alpha-Numeric” matches it is further tokenised based on if it is an English word from a dictionary, a number or if not
+matched, then returning an outcome of an alpha numeric token. They further consolidated  some of the clusters by measuring the difference between the clusters based on a string difference algorithm (Perl’s Algorithm::Diff), and setting a threshold on which to cluster the patterns. From this work, additional predictor attributes can be identified and tested.this work can be combined with HMAT by Frei \& Rennhard, 2008, to build a new approach to anomaly detection."
+}
+
+%%
+@article{chandola2009anomaly,
+  title={Anomaly detection: A survey},
+  author={Varun Chandola and Arindam Banerjee and V.Kumar },
+  journal={ACM computing surveys (CSUR)},
+  volume={41},
+  number={3},
+  pages={15},
+  year={2009},
+  publisher={ACM},
+%		annote = "Chandola et. al. \textbf{broadly grouped anomaly detection into three types: point,
+contextual and collective}. We can use the collective approach where it is described that an anomaly is a collection of related data instances which is
+anomalous in respect to the entire data set. This also is in line to use a change
+in the mix of the log messages in order to detect anomalies.
+The authors discuss the \textbf{techniques available under the six categories of anomaly detection}: four from previous work and two added by the authors, as well as identify the unique assumptions made under the techniques regarding the nature of the anomalies, which in turn are critical to determine whether the techniques will be successful. The \textbf{six categories of techniques} are: Nearest Neighbour Based, Clustering Based, Spectral based, Information Theoretic based, Classification based (Neural Networks, Bayesian Networks, SVMs), Statistical Based (Statistical Profiling using Histogram, Parametric Statistical Modeling, Non-Parametric Statistical Modeling). The authors also give a detailed overview of the various areas of applicatons of nomaly detection. And they also give an insight into and distinguish between simple and complex anomalies unlike other previous literature surveys. "
+}
+
+%%
+@ARTICLE{Jyothsna2011,
+		author = {V Jyothsna and V V Rama Prasad and K Munivara Prasad},
+		title = {A Review of Anomaly based Intrusion Detection Systems},
+		volume = {28},
+        issue = {7},
+        year = {2011},
+		pages = {26-35},
+		journal = {International Journal of Computer Applications},
+%%		annote = "Jyothsna et. al. divided the field of anomaly detection into two groups, based on signature and anomaly. They defined approach and methods that could be useful for each of them. Methods they mention which could be of use are statistical based, operational or threshold metric model, statistical moments or mean and standard deviation model, univariate model, multivariate model, time series model, outlier detection model, or user intention based."
+}
+
+%%
+@ARTICLE{Esmaeili2011,
+		author = {Mohammadjafar Esmaeili and Arwa Almadan},
+	title = {Article: Stream Data Mining and Anomaly Detection},
+	journal = {International Journal of Computer Applications},
+	year = {2011},
+	volume = {34},
+	number = {9},
+	pages = {39-42},
+	month = {Nov},
+%	annote = {Esmaeili et. al. used a \textbf{sliding window approach in combination with a
+signature based approach in order to detect anomalies by comparing previously
+clustered data}. Their system first classifies each instance of the window on different roles like engineer user,administrator.The system uses the same data set of activity for each group to create clusters where additional data will be added. The system creates an output for each methodology.
+It evaluates which cluster of activity did the instance fall into; and
+also how the instance was classified. \textbf{The decision engine then takes these outputs as inputs as well as the role of the individual from the server. If the cluster, role, classifications don't match, or the instance does not fall into a cluster, then the it is regarded as an anomaly}.}
+}
+
+%%
+@ARTICLE{seifert2006analyzing,
+  title={Analyzing malicious SSH login attempts},
+  author={Seifert, Christian},
+  year={2006}
+}
+%%
+
+@article{sheikhan2009fast,
+  title={Fast neural intrusion detection system based on hidden weight optimization algorithm and feature selection},
+  author={Sheikhan, Mansour and Sha'bani, Amir Ali},
+  journal={World Applied Sciences Journal, Special Issue of Computer \& IT},
+  volume={7},
+  pages={45--53},
+  year={2009}
+}
+
+@inproceedings{ramsbrock2007profiling,
+  title={Profiling attacker behavior following SSH compromises},
+  author={Ramsbrock, Daniel and Berthier, Robin and Cukier, Michel},
+  booktitle={Dependable Systems and Networks, 2007. DSN'07. 37th Annual IEEE/IFIP International Conference on},
+  pages={119--124},
+  year={2007},
+  organization={IEEE}
+}
+%%
+
+@phdthesis{owens2008study,
+  title={A study of passwords and methods used in brute-force SSH attacks},
+  author={Owens Jr, James P},
+  year={2008},
+  school={Clarkson University}
+}
+
+@inproceedings{rouillard2004real,
+  title={Real-time Log File Analysis Using the Simple Event Correlator (SEC).},
+  author={Rouillard, John P},
+  booktitle={LISA},
+  volume={4},
+  pages={133--150},
+  year={2004}
+}
+%%
+
+@inproceedings{lou2010mining,
+  title={Mining Invariants from Console Logs for System Problem Detection.},
+  author={Lou, Jian-Guang and Fu, Qiang and Yang, Shengqi and Xu, Ye and Li, Jiang},
+  booktitle={USENIX Annual Technical Conference},
+  year={2010},
+%  annote = {About Log File Analysis. Advanced work from \cite{rouillard2004real}}
+}
+%%
+
+@article{chandola2007,
+  title={Outlier detection: A survey},
+  author={Chandola, Varun and Banerjee, Arindam and Kumar, Vipin},
+  journal={ACM Computing Surveys},
+  year={2007},
+%  annote = { Type: Survey paper. 
+  This paper provides a comprehensive overview of existing outlier detection techniques by classifying them along different dimensions. They defines outlier detection refers to the problem finding patterns in data that do not conform to expected normal behavior. "Outlier detection has been a widely researched
+problem and finds immense use in a wide variety of application domains such as
+credit card, insurance, tax fraud detection, intrusion detection for cyber security,
+fault detection in safety critical systems, military surveillance for enemy activities
+and many other areas" It mentions the difficulty of finding outlier detection. First challenge is to define normal region. Moreover, the normal behavior changed. Also, it is harder to obtain labels for intrusions' data for training. But it's readily available for normal behavior. It comprehensively explain all about intrusion detection and its techniques: machine learning. This provide comprehensive surevys of outlier detecion methodologies developed in machine learning and statistical domain. Outlier detection techniques
+can be categorized into statistical-based, nearest neighborbased,
+clustering-based, classification-based, and spectral
+decomposition-based approaches. Outlier detection has been a widely researched problem in several knowledge disciplines,
+including statistics, data mining and machine learning. It is also known as
+anomaly detection, deviation detection, novelty detection and exception mining in
+some literature.  No single universally
+applicable or generic outlier detection approach exists}
+}
+%%
+
+@techreport{seifert2006analyzing,
+  title={Observations of login activity in an SSH honeypot},
+    author={Cisco},
+  institution={Cisco Security Intelligence Operations},
+  year={2009}
+}
+%%
+
+@incollection{hellemons2012sshcure,
+  title={SSHCure: A flow-based SSH intrusion detection system},
+  author={Hellemons, Laurens and Hendriks, Luuk and Hofstede, Rick and Sperotto, Anna and Sadre, Ramin and Pras, Aiko},
+  booktitle={Dependable Networks and Services},
+  pages={86--97},
+  year={2012},
+  publisher={Springer},
+%  annote = {Way of preventing ssh attack. SSH attacks are a main area of concern for network man- agers, due to the danger associated with a successful compromise. It's providing the prevent of SSH attack by providing the modification version of ssh shell}
+}
+
+
+@article{hofstede2014ssh,
+  title={SSH compromise detection using NetFlow/IPFIX},
+  author={Hofstede, Rick and Hendriks, Luuk and Sperotto, Anna and Pras, Aiko},
+  journal={ACM SIGCOMM computer communication review},
+  volume={44},
+  number={5},
+  pages={20--26},
+  year={2014},
+  publisher={ACM}
+}
+
+
+@article{denning1987intrusion,
+  title={An intrusion-detection model},
+  author={Denning, Dorothy E},
+  journal={Software Engineering, IEEE Transactions on},
+  number={2},
+  pages={222--232},
+  year={1987},
+  publisher={IEEE},
+%  annote = {This is the first paper of it\rq{s} kind  to \textbf{propose intrusion detection model which
+described several statistical techniques for anomaly detection system
+including threshold measure, mean, standard deviation, and
+multivariate models}. Among them, data mining and machine learning
+mechanisms that involve single classifiers and ensemble
+classifiers have been widely used to solve many IDS
+classification problems. Anomaly detection has been studied widely (dating back at least
+as far as Denning’s statistical model for anomaly detection),
+and has received considerable attention recently. }
+}
+
+@article{shanmugavadivu2011network,
+  title={Network intrusion detection system using fuzzy logic},
+  author={Shanmugavadivu, R and Nagarajan, N},
+  journal={Indian Journal of Computer Science and Engineering (IJCSE)},
+  volume={2},
+  number={1},
+  pages={101--111},
+  year={2011},
+  %annote = { The authors in this paper have \textbf{proposed a fuzzy logic-based system for effectively identifying the intrusion activities within a network}. The
+system supposedly is able to detect an intrusion behavior of the networks since the rule
+base contains a better set of rules. 
+The authors have used an automated strategy for generation of fuzzy rules, which
+are obtained from the definite rules using frequent items. \textbf{The experiments and evaluations of the proposed
+intrusion detection system are performed with the KDD Cup 99 intrusion detection dataset}. One main confrontation in intrusion detection is that we have to find out the concealed attacks from a large quantity of routine communication activities. Several machine learning (ML) algorithms, for instance Neural Network, Support Vector Machine, Genetic Algorithm, Fuzzy Logic, and Data Mining.}
+}
+
+
+@article{chen2005application,
+  title={Application of SVM and ANN for intrusion detection},
+  author={Chen, Wun-Hwa and Hsu, Sheng-Hsun and Shen, Hwang-Pin},
+  journal={Computers \& Operations Research},
+  volume={32},
+  number={10},
+  pages={2617--2634},
+  year={2005},
+  publisher={Elsevier}
+}
+
+
+@article{Gogoi2011,
+author = {Gogoi, Prasanta and Bhattacharyya, D.K. and Borah, B. and Kalita, Jugal K.}, 
+title = {A Survey of Outlier Detection Methods in Network Anomaly Identification},
+year = {2011}, 
+%annote ={In this paper, they present a comprehensive survey of well-known distance-based, density-based and other techniques for outlier detection and compare them. We provide definitions of outliers and discuss their detection based on supervised and unsupervised learning in the context of network anomaly detection.}, 
+journal = {The Computer Journal} 
+}
+
+
+@article{DBLP:journals/eswa/Su11,
+  author    = {Ming{-}Yang Su},
+  title     = {Real-time anomaly detection systems for Denial-of-Service attacks
+               by weighted k-nearest-neighbor classifiers},
+  journal   = {Expert Syst. Appl.},
+  volume    = {38},
+  number    = {4},
+  pages     = {3492--3498},
+  year      = {2011},
+}
+
+@article{hettich1999uci,
+  title={The UCI KDD Archive [http://kdd. ics. uci. edu]. Irvine, CA: University of California},
+  author={Hettich, Seth and Bay, SD},
+  journal={Department of Information and Computer Science},
+  pages={152},
+  year={1999}
+}
+
+@article{mchugh2000testing,
+  title={Testing intrusion detection systems: a critique of the 1998 and 1999 darpa intrusion detection system evaluations as performed by lincoln laboratory},
+  author={McHugh, John},
+  journal={ACM transactions on Information and system Security},
+  volume={3},
+  number={4},
+  pages={262--294},
+  year={2000}
+}
+
+@inproceedings{mahoney2003analysis,
+  title={An analysis of the 1999 DARPA/Lincoln Laboratory evaluation data for network anomaly detection},
+  author={Mahoney, Matthew V and Chan, Philip K},
+  booktitle={Recent Advances in Intrusion Detection},
+  pages={220--237},
+  year={2003},
+  organization={Springer}
+}
+@article{dewan2011,
+	author = {Dewan Md. Farid and Mohammad Zahidur Rahman and Chowdhury Mofizur Rahman},
+	title = {Article: Adaptive Intrusion Detection based on Boosting and Na�ve Bayesian Classifier},
+	journal = {International Journal of Computer Applications},
+	year = {2011},
+	volume = {24},
+	number = {3},
+	pages = {12-19},
+	month = {Jun},
+}
+@Misc{PCA,
+howpublished = {\url{https://github.com/mozilla/mwos-frauddetection-2015/tree/experiment/PCA}},
+}
+@Misc{KMean,
+howpublished = {\url{https://github.com/mozilla/mwos-frauddetection-2015/tree/experiment/KMeans}},
+}

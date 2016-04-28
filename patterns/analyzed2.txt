@@ -1,0 +1,352 @@
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %method% for %srcuser% from %srcip% port %srcport% ssh2
+# 82232 log messages matched
+# 2015-09-23.log:Sep 23 20:13:35 ssh1.corpdmz.scl3.mozilla.com sshd[23109]: Accepted publickey for jvehent from 72.64.221.62 port 55091 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : did not receive identification string from %srcip%
+# 1779 log messages matched
+# 2015-09-23.log:Sep 23 19:29:53 ssh1.corpdmz.scl3.mozilla.com sshd[12651]: Did not receive identification string from 23.92.25.50
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% %status% %string% remote %string% %srcip% : connection reset by %srcuser%
+# 207 log messages matched
+# 2015-09-23.log:Sep 23 19:30:49 ssh1.corpdmz.scl3.mozilla.com sshd[4120]: Read error from remote host 64.53.150.200: Connection reset by peer
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : %action%
+# 53 log messages matched
+# 2015-09-23.log:Sep 23 19:38:51 ssh1.corpdmz.scl3.mozilla.com sshd[13104]: error: ssh_msg_send: write
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% : too many authentication %status% for %srcuser%
+# 189 log messages matched
+# 2015-09-17.log.gz:Sep 17 16:21:40 ssh1.corpdmz.scl3.mozilla.com sshd[1319]: Disconnecting: Too many authentication failures for jojensen
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : invalid user %object%
+# 46 log messages matched
+# 2015-09-05.log.gz:Sep  5 14:14:46 ssh1.corpdmz.scl3.mozilla.com sshd[18715]: input_userauth_request: invalid user http
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : %string%
+# 112 log messages matched
+# 2015-09-07.log.gz:Sep  7 07:05:12 ssh1.corpdmz.scl3.mozilla.com sshd[31875]: Received disconnect from 43.228.225.205: 11: ok
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : invalid user %srcuser% ) ) from %srcip%
+# 1 log messages matched
+# 2015-08-14.log.gz:Aug 14 17:37:26 ssh1.corpdmz.scl3.mozilla.com sshd[19484]: Invalid user ameihm)) from 50.72.220.254
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : setting tty modes %status% : invalid argument
+# 1 log messages matched
+# 2015-08-24.log.gz:Aug 24 11:27:57 ssh1.corpdmz.scl3.mozilla.com sshd[9891]: Setting tty modes failed: Invalid argument
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : ldap_simple_bind_s %status% for ' %srcuser% ' from %srcip%
+# 1 log messages matched
+# 2015-08-30.log.gz:Aug 30 01:05:54 ssh1.corpdmz.scl3.mozilla.com sshd[16366]: ldap_simple_bind_s faileds for 'jst' from 69.12.4.10
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %string% for %srcuser% %string% a from %srcip% port %srcport% ssh2
+# 1 log messages matched
+# 2015-09-09.log.gz:Sep  9 01:55:52 ssh1.corpdmz.scl3.mozilla.com sshd[13604]: Failed keyboard-interactive/pam for invalid user a from 94.79.33.21 port 40484 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : bye bye
+# 47263 log messages matched
+# 2015-09-23.log:Sep 23 20:13:42 ssh1.corpdmz.scl3.mozilla.com sshd[23120]: Received disconnect from 72.167.248.75: 11: Bye Bye
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% %status% %string% remote %string% %srcip% : connection timed out
+# 1024 log messages matched
+# 2015-09-23.log:Sep 23 18:51:50 ssh1.corpdmz.scl3.mozilla.com sshd[8954]: Read error from remote host 63.245.219.53: Connection timed out
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : bad protocol version identification ' %string% ' from %srcip%
+# 20 log messages matched
+# 2015-09-06.log.gz:Sep  6 02:20:07 ssh1.corpdmz.scl3.mozilla.com sshd[19140]: Bad protocol version identification 'OPTIONS / HTTP/1.0' from 31.192.211.90
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : invalid user %integer%
+# 162 log messages matched
+# 2015-09-22.log:Sep 22 18:32:51 ssh1.corpdmz.scl3.mozilla.com sshd[15106]: input_userauth_request: invalid user 123
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : permission denied for %srcuser% user %object% from %srcip%
+# 11 log messages matched
+# 2015-08-22.log.gz:Aug 22 20:16:29 ssh1.corpdmz.scl3.mozilla.com sshd[13456]: error: PAM: Permission denied for illegal user system from 104.236.139.141
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : server listening on %srcip% port %srcport% .
+# 2 log messages matched
+# 2015-08-13.log.gz:Aug 13 15:20:33 ssh1.corpdmz.scl3.mozilla.com sshd[26333]: Server listening on 0.0.0.0 port 22.
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : protocol major versions differ for %srcip% : %srcuser% vs. %string%
+# 7 log messages matched
+# 2015-09-15.log.gz:Sep 15 18:07:02 ssh1.corpdmz.scl3.mozilla.com sshd[18288]: Protocol major versions differ for 199.101.187.92: SSH-2.0-OpenSSH_5.3 vs. SSH-1.5-NmapNSE_1.0
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% duo %action% for ' %srcuser% ' from %srcip% : logging you in automatically...
+# 19 log messages matched
+# 2015-09-23.log:Sep 23 14:45:26 ssh1.corpdmz.scl3.mozilla.com sshd[21357]: Skipped Duo login for 'emorley@mozilla.com' from 86.184.68.243: Logging you in automatically...
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% %status% %string% remote %string% %srcip% : no route to %dstuser%
+# 83 log messages matched
+# 2015-09-21.log:Sep 21 07:17:52 ssh1.corpdmz.scl3.mozilla.com sshd[10989]: Read error from remote host 173.228.55.90: No route to host
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% %string% for %srcuser% from %srcip% port %srcport% ssh2
+# 60732 log messages matched
+# 2015-09-23.log:Sep 23 20:13:48 ssh1.corpdmz.scl3.mozilla.com sshd[23110]: Postponed keyboard-interactive/pam for jvehent from 72.64.221.62 port 55091 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : internal %status% : pam auth succeeded when it should have failed
+# 53553 log messages matched
+# 2015-09-21.log:Sep 21 23:03:31 ssh1.corpdmz.scl3.mozilla.com sshd[3250]: fatal: Internal error: PAM auth succeeded when it should have failed
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% duo %action% for ' %srcuser% ' from %srcip%
+# 8571 log messages matched
+# 2015-09-23.log:Sep 23 20:13:48 ssh1.corpdmz.scl3.mozilla.com sshd[23114]: Successful Duo login for 'jvehent@mozilla.com' from 72.64.221.62
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : normal shutdown , thank you for %srcuser%
+# 86 log messages matched
+# 2015-09-15.log.gz:Sep 15 19:58:52 ssh1.corpdmz.scl3.mozilla.com sshd[8250]: Received disconnect from 31.184.195.111: 11: Normal Shutdown, Thank you for playing
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : invalid user %integer% from %srcip%
+# 162 log messages matched
+# 2015-09-22.log:Sep 22 18:32:51 ssh1.corpdmz.scl3.mozilla.com sshd[15105]: Invalid user 123 from 111.161.74.165
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %string% for %srcuser% %string% %object% from %srcip% port %srcport% ssh2
+# 11 log messages matched
+# 2015-08-22.log.gz:Aug 22 20:16:29 ssh1.corpdmz.scl3.mozilla.com sshd[13456]: Failed keyboard-interactive/pam for invalid user system from 104.236.139.141 port 36363 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %string% for %srcuser% %string% m from %srcip% port %srcport% ssh2
+# 1 log messages matched
+# 2015-08-08.log.gz:Aug  8 20:55:50 ssh1.corpdmz.scl3.mozilla.com sshd[23023]: Failed keyboard-interactive/pam for invalid user m from 191.237.20.171 port 1099 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% duo %action% for ' %srcuser% ' from %srcip% : couldn't %object% to %dsthost% : %status%
+# 2 log messages matched
+# 2015-09-22.log:Sep 22 20:34:52 ssh1.corpdmz.scl3.mozilla.com sshd[5451]: Failsafe Duo login for 'jst@mozilla.com' from 63.245.221.32: Couldn't connect to api-4b043da5.duosecurity.com: Success
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% duo %action% for ' %srcuser% ' from %srcip% : allowing unknown user
+# 100737 log messages matched
+# 2015-09-23.log:Sep 23 08:26:50 ssh1.corpdmz.scl3.mozilla.com sshd[3344]: Skipped Duo login for 'sguo@mozilla.com' from 204.28.118.159: Allowing unknown user
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %action% : %string% already in use
+# 472 log messages matched
+# 2015-09-17.log.gz:Sep 17 01:21:09 ssh1.corpdmz.scl3.mozilla.com sshd[1009]: error: bind: Address already in use
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : permission denied for %srcuser% user %action% from %srcip%
+# 17 log messages matched
+# 2015-09-15.log.gz:Sep 15 23:54:13 ssh1.corpdmz.scl3.mozilla.com sshd[20715]: error: PAM: Permission denied for illegal user backup from 5.153.182.82
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %string% for %srcuser% %string% %action% from %srcip% port %srcport% ssh2
+# 17 log messages matched
+# 2015-09-15.log.gz:Sep 15 23:54:13 ssh1.corpdmz.scl3.mozilla.com sshd[20715]: Failed keyboard-interactive/pam for invalid user backup from 5.153.182.82 port 64605 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : invalid user %srcuser% ) )
+# 1 log messages matched
+# 2015-08-14.log.gz:Aug 14 17:37:26 ssh1.corpdmz.scl3.mozilla.com sshd[19485]: input_userauth_request: invalid user ameihm))
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : %string% %integer% seq %integer%
+# 6 log messages matched
+# 2015-09-15.log.gz:Sep 15 16:49:29 ssh1.corpdmz.scl3.mozilla.com sshd[5907]: dispatch_protocol_error: type 90 seq 8
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : connection %action% by %srcip%
+# 76485 log messages matched
+# 2015-09-23.log:Sep 23 20:12:45 ssh1.corpdmz.scl3.mozilla.com sshd[23057]: Connection closed by 10.22.75.42
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : permission denied for %srcuser% user %string% from %srcip%
+# 5681 log messages matched
+# 2015-09-21.log:Sep 21 23:03:35 ssh1.corpdmz.scl3.mozilla.com sshd[3268]: error: PAM: Permission denied for illegal user admin from 66.23.227.2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : connect_to %string% : unknown host ( name or service not known )
+# 3 log messages matched
+# 2015-09-14.log.gz:Sep 14 15:41:09 ssh1.corpdmz.scl3.mozilla.com sshd[19605]: error: connect_to admin1b.phx1.mozilla.com: unknown host (Name or service not known)
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : client disconnecting normally
+# 11 log messages matched
+# 2015-09-16.log.gz:Sep 16 14:41:02 ssh1.corpdmz.scl3.mozilla.com sshd[5145]: Received disconnect from 50.115.124.116: 11: Client disconnecting normally
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : %string% : %action% : broken pipe
+# 53552 log messages matched
+# 2015-09-21.log:Sep 21 23:03:31 ssh1.corpdmz.scl3.mozilla.com sshd[3251]: fatal: mm_request_send: write: Broken pipe
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% : %object% corrupt
+# 2 log messages matched
+# 2015-09-01.log.gz:Sep  1 06:46:56 ssh1.corpdmz.scl3.mozilla.com sshd[13408]: Disconnecting: Packet corrupt
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %object% to %ipv6% port %srcport% failed : network is unreachable
+# 6 log messages matched
+# 2015-07-29.log.gz:Jul 29 08:49:09 ssh1.corpdmz.scl3.mozilla.com sshd[21175]: error: connect to 2a03:2880:2130:cf05:face:b00c:0:1 port 443 failed: Network is unreachable
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : permission denied for %srcuser% user a from %srcip%
+# 1 log messages matched
+# 2015-09-09.log.gz:Sep  9 01:55:52 ssh1.corpdmz.scl3.mozilla.com sshd[13604]: error: PAM: Permission denied for illegal user a from 94.79.33.21
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% ( sshd : %object% ) : session %action% for user %srcuser%
+# 37228 log messages matched
+# 2015-09-23.log:Sep 23 20:13:39 ssh1.corpdmz.scl3.mozilla.com sshd[22991]: pam_unix(sshd:session): session closed for user gdestuynder
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : connect_to %srcip% port %srcport% : %string%
+# 84 log messages matched
+# 2015-09-12.log.gz:Sep 12 23:27:06 ssh1.corpdmz.scl3.mozilla.com sshd[2467]: error: connect_to 10.251.24.61 port 22: failed.
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : no supported authentication methods available
+# 3 log messages matched
+# 2015-09-15.log.gz:Sep 15 14:48:35 ssh1.corpdmz.scl3.mozilla.com sshd[11245]: Received disconnect from 5.2.198.53: 14: No supported authentication methods available
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %string% for %srcuser% %string% %string% ) ) from %srcip% port %srcport% ssh2
+# 1 log messages matched
+# 2015-08-14.log.gz:Aug 14 17:37:26 ssh1.corpdmz.scl3.mozilla.com sshd[19484]: Failed keyboard-interactive/pam for invalid user ameihm)) from 50.72.220.254 port 49692 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : no more %object%
+# 13 log messages matched
+# 2015-09-03.log.gz:Sep  3 16:13:54 ssh1.corpdmz.scl3.mozilla.com sshd[17141]: error: no more sessions
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : invalid user %srcuser% from %srcip%
+# 29554 log messages matched
+# 2015-09-23.log:Sep 23 20:13:42 ssh1.corpdmz.scl3.mozilla.com sshd[23119]: Invalid user fld from 72.167.248.75
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %string% for %srcuser% %string% %string% from %srcip% port %srcport% ssh2
+# 5681 log messages matched
+# 2015-09-21.log:Sep 21 23:03:35 ssh1.corpdmz.scl3.mozilla.com sshd[3268]: Failed keyboard-interactive/pam for invalid user admin from 66.23.227.2 port 64303 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% : %string% already in use
+# 472 log messages matched
+# 2015-09-17.log.gz:Sep 17 01:21:09 ssh1.corpdmz.scl3.mozilla.com sshd[1009]: bind: Address already in use
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% : too many authentication %status% for %string%
+# 14 log messages matched
+# 2015-07-02.log.gz:Jul  2 10:55:01 ssh1.corpdmz.scl3.mozilla.com sshd[22254]: Disconnecting: Too many authentication failures for user
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% duo %action% for ' %srcuser% ' from %srcip% : ip address is trusted
+# 28 log messages matched
+# 2015-09-23.log:Sep 23 20:12:28 ssh1.corpdmz.scl3.mozilla.com sshd[22993]: Skipped Duo login for 'gdestuynder@mozilla.com' from 10.22.248.218: IP address is trusted
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : connect_to %string% port %srcport% : %string%
+# 4411 log messages matched
+# 2015-09-17.log.gz:Sep 17 03:42:01 ssh1.corpdmz.scl3.mozilla.com sshd[29537]: error: connect_to localhost port 43211: failed.
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : invalid user %srcuser%
+# 29508 log messages matched
+# 2015-09-23.log:Sep 23 20:13:42 ssh1.corpdmz.scl3.mozilla.com sshd[23120]: input_userauth_request: invalid user fld
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : %action% from socket %status% : connection reset by %srcuser%
+# 1232 log messages matched
+# 2015-09-22.log:Sep 22 05:35:36 ssh1.corpdmz.scl3.mozilla.com sshd[16550]: fatal: Read from socket failed: Connection reset by peer
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : found matching %string% key : %time% %string%
+# 70 log messages matched
+# 2015-09-21.log:Sep 21 06:53:18 ssh1.corpdmz.scl3.mozilla.com sshd[10981]: Found matching RSA key: 56:74:52:c3:04:14:e8:a2:4f:90:70:bf:cd:84:4e:32
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : permission denied for %srcuser% user ameihm ) ) from %srcip%
+# 1 log messages matched
+# 2015-08-14.log.gz:Aug 14 17:37:26 ssh1.corpdmz.scl3.mozilla.com sshd[19484]: error: PAM: Permission denied for illegal user ameihm)) from 50.72.220.254
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : disconnected by %string%
+# 3183 log messages matched
+# 2015-09-23.log:Sep 23 20:13:39 ssh1.corpdmz.scl3.mozilla.com sshd[22994]: Received disconnect from 10.22.248.218: 11: disconnected by user
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : invalid user %string% from %srcip%
+# 591 log messages matched
+# 2015-09-23.log:Sep 23 10:28:38 ssh1.corpdmz.scl3.mozilla.com sshd[25987]: Invalid user user from 65.181.127.72
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% connection %string% %srcip% port %srcport%
+# 32728 log messages matched
+# 2015-09-23.log:Sep 23 14:07:46 ssh1.corpdmz.scl3.mozilla.com sshd[8365]: Closing connection to 10.22.75.203 port 36793
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : permission denied for %srcuser% user m from %srcip%
+# 1 log messages matched
+# 2015-08-08.log.gz:Aug  8 20:55:50 ssh1.corpdmz.scl3.mozilla.com sshd[23023]: error: PAM: Permission denied for illegal user m from 191.237.20.171
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : attempting ldap lookup for ' %srcuser% ' from %srcip%
+# 111179 log messages matched
+# 2015-09-23.log:Sep 23 20:13:35 ssh1.corpdmz.scl3.mozilla.com sshd[23114]: Attempting LDAP lookup for 'jvehent' from 72.64.221.62
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : %string% %integer% , received %integer% bytes
+# 32729 log messages matched
+# 2015-09-23.log:Sep 23 14:07:46 ssh1.corpdmz.scl3.mozilla.com sshd[8365]: Transferred: sent 171272, received 70568 bytes
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : invalid user %string% %srcip%
+# 5 log messages matched
+# 2015-08-25.log.gz:Aug 25 19:53:16 ssh1.corpdmz.scl3.mozilla.com sshd[8758]: Invalid user  from 89.248.172.35
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : invalid user
+# 5 log messages matched
+# 2015-08-25.log.gz:Aug 25 19:53:16 ssh1.corpdmz.scl3.mozilla.com sshd[8759]: input_userauth_request: invalid user 
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% ( sshd : %object% ) : session %action% for user %srcuser% by ( uid = %srcuid% )
+# 37250 log messages matched
+# 2015-09-23.log:Sep 23 20:13:48 ssh1.corpdmz.scl3.mozilla.com sshd[23109]: pam_unix(sshd:session): session opened for user jvehent by (uid=0)
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : %string% : no auth method
+# 24 log messages matched
+# 2015-08-03.log.gz:Aug  3 03:08:49 ssh1.corpdmz.scl3.mozilla.com sshd[5979]: Received disconnect from 118.193.200.74: 3: com.jcraft.jsch.JSchException: No Auth method
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : user %srcuser% %string% on pid %integer%
+# 37250 log messages matched
+# 2015-09-23.log:Sep 23 20:13:48 ssh1.corpdmz.scl3.mozilla.com sshd[23109]: User child is on pid 23121
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : %string% : auth %status%
+# 432 log messages matched
+# 2015-09-21.log:Sep 21 23:03:35 ssh1.corpdmz.scl3.mozilla.com sshd[3269]: Received disconnect from 66.23.227.2: 3: com.jcraft.jsch.JSchException: Auth fail
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : ldap_count_entries %status% for ' %srcuser% ' from %srcip%
+# 54297 log messages matched
+# 2015-09-21.log:Sep 21 23:03:30 ssh1.corpdmz.scl3.mozilla.com sshd[3252]: ldap_count_entries failed for 'root' from 66.23.227.2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% ( sshd : %string% ) : conversation %status%
+# 51 log messages matched
+# 2015-09-23.log:Sep 23 19:38:51 ssh1.corpdmz.scl3.mozilla.com sshd[13104]: pam_duo(sshd:auth): conversation failed
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %string% for %srcuser% %string% %integer% from %srcip% port %srcport% ssh2
+# 85 log messages matched
+# 2015-09-18.log.gz:Sep 18 12:50:45 ssh1.corpdmz.scl3.mozilla.com sshd[1351]: Failed keyboard-interactive/pam for invalid user 123 from 59.57.20.154 port 59836 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %action% : change of %string% or service not allowed : ( testuser , ssh-connection ) - > ( user , %srcuser% )
+# 1 log messages matched
+# 2015-07-07.log.gz:Jul  7 09:42:30 ssh1.corpdmz.scl3.mozilla.com sshd[6414]: Disconnecting: Change of username or service not allowed: (testuser,ssh-connection) -> (user,ssh-connection)
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% %string% for %srcuser% from %srcip% port %srcport% ssh2
+# 50296 log messages matched
+# 2015-09-23.log:Sep 23 20:13:48 ssh1.corpdmz.scl3.mozilla.com sshd[23109]: Accepted keyboard-interactive/pam for jvehent from 72.64.221.62 port 55091 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : no lookup needed for ' %srcuser% ' from %srcip%
+# 5466 log messages matched
+# 2015-09-23.log:Sep 23 18:24:03 ssh1.corpdmz.scl3.mozilla.com sshd[723]: no lookup needed for 'jst@mozilla.com' from 63.245.221.32
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% duo %action% for ' %srcuser% ' from %srcip% : %status% gathering user response
+# 50 log messages matched
+# 2015-09-23.log:Sep 23 19:38:51 ssh1.corpdmz.scl3.mozilla.com sshd[13104]: Aborted Duo login for 'acrichton@mozilla.com' from 63.245.219.53: Error gathering user response
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% :
+# 1 log messages matched
+# 2015-07-01.log.gz:Jul  1 03:30:00 ssh1.corpdmz.scl3.mozilla.com sshd[4933]: Received disconnect from 146.0.72.181: 11: 
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received signal %integer% ; terminating.
+# 2 log messages matched
+# 2015-08-13.log.gz:Aug 13 15:20:30 ssh1.corpdmz.scl3.mozilla.com sshd[2676]: Received signal 15; terminating.
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : %string% : read timed out
+# 2 log messages matched
+# 2015-09-05.log.gz:Sep  5 03:51:50 ssh1.corpdmz.scl3.mozilla.com sshd[13785]: Received disconnect from 103.243.107.56: 3: java.net.SocketTimeoutException: Read timed out
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : connection from %srcip% port %srcport%
+# 185840 log messages matched
+# 2015-09-23.log:Sep 23 20:13:41 ssh1.corpdmz.scl3.mozilla.com sshd[23119]: Connection from 72.167.248.75 port 34906
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : found matching %string% key : %string%
+# 79987 log messages matched
+# 2015-09-23.log:Sep 23 20:13:35 ssh1.corpdmz.scl3.mozilla.com sshd[23109]: Found matching RSA key: 53:6e:1a:27:1e:aa:6a:b7:06:94:16:dc:23:d0:d6:3e
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% %method% for %srcuser% from %srcip% port %srcport% ssh2
+# 40033 log messages matched
+# 2015-09-23.log:Sep 23 20:13:35 ssh1.corpdmz.scl3.mozilla.com sshd[23110]: Postponed publickey for jvehent from 72.64.221.62 port 55091 ssh2
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %string% : invalid user %string%
+# 591 log messages matched
+# 2015-09-23.log:Sep 23 10:28:38 ssh1.corpdmz.scl3.mozilla.com sshd[25988]: input_userauth_request: invalid user user
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : cannot listen to port : %srcport%
+# 472 log messages matched
+# 2015-09-17.log.gz:Sep 17 01:21:09 ssh1.corpdmz.scl3.mozilla.com sshd[1009]: error: channel_setup_fwd_listener: cannot listen to port: 43222
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : %status% : %string% : permission denied for %srcuser% user %integer% from %srcip%
+# 85 log messages matched
+# 2015-09-18.log.gz:Sep 18 12:50:45 ssh1.corpdmz.scl3.mozilla.com sshd[1351]: error: PAM: Permission denied for illegal user 123 from 59.57.20.154
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : received %action% %string% %srcip% : %srcport% : unable to %dstuser% using the available authentication methods
+# 5 log messages matched
+# 2015-07-15.log.gz:Jul 15 20:26:26 ssh1.corpdmz.scl3.mozilla.com sshd[8246]: Received disconnect from 91.194.254.142: 14: Unable to connect using the available authentication methods
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : server listening on %ipv6% port %srcport% .
+# 2 log messages matched
+# 2015-08-13.log.gz:Aug 13 15:20:33 ssh1.corpdmz.scl3.mozilla.com sshd[26333]: Server listening on :: port 22.
+
+%msgtime% %string% : %time% %srchost% sshd [ %integer% ] : corrupted mac on input.
+# 2 log messages matched
+# 2015-09-01.log.gz:Sep  1 06:46:56 ssh1.corpdmz.scl3.mozilla.com sshd[13408]: Corrupted MAC on input.
+
